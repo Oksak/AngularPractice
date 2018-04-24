@@ -1,0 +1,35 @@
+main
+  display: flex
+  flex-direction: column
+  width: 100%
+  .main-services
+    text-align: center
+    padding: 100px 30px 30px 30px
+    .wrapper
+      h1
+        font-size: 44px
+        padding-bottom: 30px
+      p
+        color: #999999
+        margin-bottom: 100px
+    .services-cards
+      text-align: center
+      display: grid
+      grid-template-columns: auto auto auto auto
+      grid-column-gap: 20px
+      .services-card
+        h4
+          margin-top: 20px
+          margin-bottom: 15px
+          font-size: 25px
+          text-transform: uppercase
+
+
+
+
+@media screen and (max-width: 1110px)
+
+  .main-services
+    .wrapper
+      .services-cards
+        grid-template-columns: auto

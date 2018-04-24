@@ -1,0 +1,114 @@
+main
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.wrapper
+  width:  70%
+  margin: auto
+  .main-about
+    display: flex
+    padding: 100px 0 100px 0
+    .mw-100
+      min-width: 100%
+  .about-right
+    margin-left: 175px
+    h1
+      display: inline-block
+      border-bottom: 3px solid #fcac45
+      padding-bottom: 20px
+      text-transform: uppercase
+      font-weight: 400
+    h1::after
+      display: none
+    .about-us
+      color: black
+      font-weight: bold
+    p
+      color: #848484
+      margin: 30px 0 50px 0
+    li
+      background: url("/assets/img/dots.png") 0 no-repeat
+      padding-left: 25px
+      margin-top: 10px
+      font-style: italic
+      font-family: cursive
+      color: #999999
+      span
+        color: #5a5a5a
+        font-weight: bold
+        font-style: normal
+
+@media screen and (max-width: 1560px)
+
+  .main-about
+    .about-right
+      margin-left: 140px
+      h1
+        font-size: 27px
+      p
+        font-size: 17px
+      li
+        font-size: 15px
+
+
+@media screen and (max-width: 1475px)
+
+  .main-about
+    .about-right
+      margin-left: 80px
+      h1
+        font-size: 25px
+      p
+        font-size: 15px
+        ul
+          li
+            font-size: 15px
+
+@media screen and (max-width: 1475px)
+
+  .main-about
+    .about-right
+      margin-left: 60px
+      h1
+        font-size: 17px
+      p
+        font-size: 10px
+        ul
+          li
+            font-size: 10px
+
+@media screen and (max-width: 1358px)
+
+  .main-about
+    flex-direction: column
+    .about-right
+      text-align: center
+      margin-left: 0
+      li
+        text-align: left
+        margin-left: 20%
+        font-size: 20px
+      h1
+        font-size: 30px
+        margin-top: 20px
+      p
+        font-size: 20px
+  .mw-100
+    max-width: 100%
+
+@media screen and (max-width: 1010px)
+
+  .main-about
+    flex-direction: column
+    .about-right
+      text-align: center
+      margin-left: 0
+      li
+        text-align: left
+        margin-left: 12%
+      h1
+        font-size: 25px
+        margin-top: 20px
+  .mw-100
+    max-width: 100%
